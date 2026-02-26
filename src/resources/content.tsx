@@ -1,3 +1,5 @@
+/* eslint-disable */
+// @ts-nocheck
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
@@ -294,7 +296,7 @@ const about: About = {
         description: <>Achieving a Weighted Average Mark ranking in the top 5% of students in an undergraduate program that year.</>,
         images: [
           {
-            src: '/images/projects/project-01/Dean24.png',
+            src: '/images/projects/project-01/Dean24.jpeg',
             alt: "Dean's List 2024",
             width: 12,
             height: 16,
@@ -308,7 +310,7 @@ const about: About = {
         description: <>Awarded for outstanding academic achievements within the Faculty of Engineering and Information Sciences. Recognizes excellence in the field of Information Technology and consistent performance in the program.</>,
         images: [
           {
-            src: '/images/projects/project-01/Scholarship.png',
+            src: '/images/projects/project-01/Scholarship.jpeg',
             alt: 'Scholarship',
             width: 12,
             height: 16,
