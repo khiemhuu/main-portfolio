@@ -150,6 +150,15 @@ export interface About extends BasePageConfig {
       role: string;
       /** Achievements at the company */
       achievements: React.ReactNode[];
+      /** Path to company/organization logo image */
+      logo?: string;
+      /** Tags/badges displayed next to the experience (e.g. "Part-time", "On-site") */
+      tags?: Array<{
+        /** Tag label text */
+        name: string;
+        /** Tag color variant */
+        variant?: "neutral" | "brand" | "accent" | "info" | "danger" | "warning" | "success";
+      }>;
       /** Images related to the experience */
       images?: Array<{
         /** Image source path */
@@ -203,6 +212,40 @@ export interface About extends BasePageConfig {
         /** Image width ratio */
         width: number;
         /** Image height ratio */
+        height: number;
+      }>;
+    }>;
+  };
+  /** Awards and certifications section */
+  awards: {
+    /** Whether to display awards section */
+    display: boolean;
+    /** Title for the awards section */
+    title: string;
+    /** List of awards and certifications */
+    items: Array<{
+      /** Award/certification title */
+      title: string;
+      /** Description */
+      description?: React.ReactNode;
+      /** Issuer or organization */
+      issuer?: string;
+      /** Date issued or timeframe */
+      date?: string;
+      /** Badge image path (e.g. AWS badge, certification logo) */
+      badge?: string;
+      /** Link to credential or proof */
+      link?: string;
+      /** Tags/labels */
+      tags?: Array<{
+        name: string;
+        icon?: string;
+      }>;
+      /** Related images */
+      images?: Array<{
+        src: string;
+        alt: string;
+        width: number;
         height: number;
       }>;
     }>;

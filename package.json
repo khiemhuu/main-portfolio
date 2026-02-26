@@ -16,6 +16,7 @@
     "@once-ui-system/core": "^1.4.27",
     "classnames": "^2.5.1",
     "cookie": "^1.0.2",
+    "eslint-config-next": "^15.5.12",
     "gray-matter": "^4.0.3",
     "lint-staged": "^16.1.5",
     "next": "15.3.8",

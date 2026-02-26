@@ -111,9 +111,29 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Student Representative",
-        timeframe: "April 2025 - Present",
-        role: "School of Computing and Information Technology, Falcuty of Engineering and Information Science  University of Wollongong",
+        company: "Full Stack Product Developer",
+        timeframe: "Oct 2025 - Present",
+        role: "Devika · Wollongong, New South Wales, Australia",
+        achievements: [
+          <>
+            Developing full stack product solutions as part of the Devika team.
+          </>,
+        ],
+        logo: "/images/logos/devika.svg",
+        tags: [
+          { name: "Part-time", variant: "brand" },
+          { name: "On-site", variant: "accent" },
+        ],
+        images: [],
+      },
+      {
+        company: "EIS School of Computing and Information Technology Student Representative",
+        timeframe: "Apr 2025 - Nov 2025",
+        role: "School of Computing and Information Technology, Faculty of Engineering and Information Science, University of Wollongong",
+        logo: "/images/logos/uow.svg",
+        tags: [
+          { name: "Volunteer", variant: "accent" },
+        ],
         achievements: [
           <>
             Acted as a liaison between students and faculty, advocating for student interests and ensuring the student voice was consistently represented in school-level decisions.
@@ -141,9 +161,16 @@ const about: About = {
       },
       {
         company: "Member of Faculty Education Committee",
-        timeframe: "June 2025 - Present",
-        role: "Falcuty of Engineering and Information Science, University of Wollongong",
+        timeframe: "Jun 2025 - Nov 2025",
+        role: "Faculty of Engineering and Information Science, University of Wollongong · Wollongong, New South Wales, Australia",
+        logo: "/images/logos/uow.svg",
+        tags: [
+          { name: "Committee", variant: "brand" },
+        ],
         achievements: [
+          <>
+            Representing student voice for student committee that improving learning and teaching experience in the Faculty of Engineering and Information Sciences (EIS).
+          </>,
           <>
             Represent the voice of international students at the faculty level, contributing actively to education policy discussions and decision-making processes.
           </>,
@@ -159,7 +186,6 @@ const about: About = {
           <>
             Foster strong relationships with university stakeholders to promote student-centred initiatives and continuous improvement.
           </>,
-          
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -191,8 +217,8 @@ const about: About = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Skills and Awards",
+    display: true,
+    title: "Skills",
     skills: [
       {
         title: "UI/UX Design: Figma",
@@ -239,68 +265,89 @@ const about: About = {
       {
         title: "Photography",
         description: <>Able to take photos with professional camera. Also have a knowledge of Photoshop, Lightroom, and other photo editing software.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+    ],
+  },
+  awards: {
+    display: true,
+    title: "Awards & Certifications",
+    items: [
+      {
+        title: "AWS Certified Solutions Architect – Associate",
+        issuer: "Amazon Web Services (AWS)",
+        date: "Issued Dec 2025 · Expires Dec 2028",
+        description: <>Validates the ability to design and implement distributed systems on AWS, covering compute, networking, storage, and database services.</>,
+        badge: "/images/badges/aws-saa.svg",
+        link: "https://www.credly.com/badges/cfe94d1e-fe45-4392-a8ea-830716bc3547/linked_in_profile",
+        tags: [
+          {
+            name: "AWS",
+            icon: "aws",
+          },
         ],
       },
       {
-        title: "Executive Dean's Merit List 2024 - SEP 25",
-        description: <>Recognized for achieving a Weighted Average Mark ranking in the top 5% of students in the undergraduate program. Highlights dedication and academic excellence in the field of Information Technology.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Executive Dean's Merit List 2024",
+        issuer: "Faculty of Engineering and Information Science, University of Wollongong",
+        date: "Sep 2025",
+        description: <>Achieving a Weighted Average Mark ranking in the top 5% of students in an undergraduate program that year.</>,
         images: [
           {
             src: '/images/projects/project-01/Dean24.png',
-            alt: 'Project image',
+            alt: "Dean's List 2024",
             width: 12,
-            height: 16
+            height: 16,
           },
         ],
       },
       {
-        title: "Engineering and Information Sciences Scholars and Advanced Scholarship - SEP 24",
+        title: "Engineering and Information Sciences Scholars and Advanced Scholarship",
+        issuer: "Faculty of Engineering and Information Sciences, University of Wollongong",
+        date: "Sep 2024",
         description: <>Awarded for outstanding academic achievements within the Faculty of Engineering and Information Sciences. Recognizes excellence in the field of Information Technology and consistent performance in the program.</>,
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: '/images/projects/project-01/Scholarship.png',
-            alt: 'Project image',
+            alt: 'Scholarship',
             width: 12,
-            height: 16
+            height: 16,
           },
         ],
       },
       {
-        title: "Executive Dean's Merit List 2023 - JUL 24",
+        title: "Executive Dean's Merit List 2023",
+        issuer: "Faculty of Engineering and Information Science, University of Wollongong",
+        date: "Jul 2024",
         description: <>Recognized for achieving a Weighted Average Mark ranking in the top 5% of students in the undergraduate program. Highlights dedication and academic excellence in the field of Information Technology.</>,
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: '/images/projects/project-01/Dean23.png',
-            alt: 'Project image',
+            alt: "Dean's List 2023",
             width: 12,
-            height: 16
+            height: 16,
           },
         ],
       },
       {
-        title: 'UOW University Excellence Scholarship',
+        title: "UOW University Excellence Scholarship",
+        issuer: "University of Wollongong",
         description: <>Scholarship awarded for academic excellence and outstanding performance throughout highschool portfolio. Supports and encourages students who demonstrate strong academic abilities.</>,
+      },
+      {
+        title: "People's Choice Award",
+        issuer: "University of Wollongong",
+        date: "2024",
+        description: <>The prize for the photography competition by UOW for encouraging sustainable environment protections (Sustainable snapshots: putting Country into focus photography competition 2024).</>,
         images: [
-        ]
-    },
-    {
-        title: 'People\’s Choice Award',
-        description: <>The prize for the photography competition by UOW for encouring sustainable environment protections (Sustainable snapshots: putting Country into focus photography competition 2024)
-        </>,
-        images: [
-            {
-                src: '/images/projects/project-01/Photo24.png',
-                alt: 'Project image',
-                width: 12,
-                height: 16
-            },
-        ]
-    }
+          {
+            src: '/images/projects/project-01/Photo24.png',
+            alt: "People's Choice Award",
+            width: 12,
+            height: 16,
+          },
+        ],
+      },
     ],
   },
 };
