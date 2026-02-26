@@ -1,0 +1,26 @@
+:root {
+  /* Font family configuration */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-label: 'Manrope', sans-serif;
+  --font-code: 'Manrope', monospace;
+  
+
+}
+
+/* Ensure Manrope font is applied globally */
+* {
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+code, pre {
+  font-family: var(--font-code);
+}
+
+label {
+  font-family: var(--font-label);
+}
