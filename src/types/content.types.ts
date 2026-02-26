@@ -216,6 +216,40 @@ export interface About extends BasePageConfig {
       }>;
     }>;
   };
+  /** Awards and certifications section */
+  awards: {
+    /** Whether to display awards section */
+    display: boolean;
+    /** Title for the awards section */
+    title: string;
+    /** List of awards and certifications */
+    items: Array<{
+      /** Award/certification title */
+      title: string;
+      /** Description */
+      description?: React.ReactNode;
+      /** Issuer or organization */
+      issuer?: string;
+      /** Date issued or timeframe */
+      date?: string;
+      /** Badge image path (e.g. AWS badge, certification logo) */
+      badge?: string;
+      /** Link to credential or proof */
+      link?: string;
+      /** Tags/labels */
+      tags?: Array<{
+        name: string;
+        icon?: string;
+      }>;
+      /** Related images */
+      images?: Array<{
+        src: string;
+        alt: string;
+        width: number;
+        height: number;
+      }>;
+    }>;
+  };
 }
 
 /**

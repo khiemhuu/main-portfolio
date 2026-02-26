@@ -49,6 +49,11 @@ export default function About() {
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
     },
+    {
+      title: about.awards.title,
+      display: about.awards.display,
+      items: about.awards.items.map((item) => item.title),
+    },
   ];
   return (
     <Column maxWidth="m">
@@ -337,6 +342,97 @@ export default function About() {
                         {skill.images.map((image, index) => (
                           <Row
                             key={index}
+                            border="neutral-medium"
+                            radius="m"
+                            minWidth={image.width}
+                            height={image.height}
+                          >
+                            <Media
+                              enlarge
+                              radius="m"
+                              sizes={image.width.toString()}
+                              alt={image.alt}
+                              src={image.src}
+                            />
+                          </Row>
+                        ))}
+                      </Row>
+                    )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.awards.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.awards.title}
+                variant="display-strong-s"
+                marginBottom="40"
+                marginTop="40"
+              >
+                {about.awards.title}
+              </Heading>
+              <Column fillWidth gap="l">
+                {about.awards.items.map((award, index) => (
+                  <Column key={`award-${index}`} fillWidth gap="4">
+                    <Row vertical="center" gap="16">
+                      {award.badge && (
+                        <Media
+                          src={award.badge}
+                          alt={`${award.title} badge`}
+                          radius="m"
+                          style={{ width: 64, height: 64, objectFit: "contain", flexShrink: 0 }}
+                        />
+                      )}
+                      <Column gap="4" style={{ minWidth: 0 }}>
+                        <Text id={award.title} variant="heading-strong-l">
+                          {award.title}
+                        </Text>
+                        {award.issuer && (
+                          <Text variant="body-default-s" onBackground="brand-weak">
+                            {award.issuer}
+                          </Text>
+                        )}
+                        {award.date && (
+                          <Text variant="body-default-xs" onBackground="neutral-weak">
+                            {award.date}
+                          </Text>
+                        )}
+                      </Column>
+                    </Row>
+                    {award.description && (
+                      <Text variant="body-default-m" onBackground="neutral-weak">
+                        {award.description}
+                      </Text>
+                    )}
+                    {award.tags && award.tags.length > 0 && (
+                      <Row wrap gap="8" paddingTop="8">
+                        {award.tags.map((tag, tagIndex) => (
+                          <Tag key={`${award.title}-tag-${tagIndex}`} size="l" prefixIcon={tag.icon}>
+                            {tag.name}
+                          </Tag>
+                        ))}
+                      </Row>
+                    )}
+                    {award.link && (
+                      <Row paddingTop="8">
+                        <Button
+                          href={award.link}
+                          variant="secondary"
+                          size="s"
+                          label="View Credential"
+                          prefixIcon="openLink"
+                        />
+                      </Row>
+                    )}
+                    {award.images && award.images.length > 0 && (
+                      <Row fillWidth paddingTop="m" gap="12" wrap>
+                        {award.images.map((image, imgIndex) => (
+                          <Row
+                            key={imgIndex}
                             border="neutral-medium"
                             radius="m"
                             minWidth={image.width}
