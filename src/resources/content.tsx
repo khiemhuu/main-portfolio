@@ -122,6 +122,7 @@ const about: About = {
           </>,
         ],
         logo: "/images/logos/devika.jpg",
+        link: "https://devika.com",
         tags: [
           { name: "Part-time", variant: "brand" },
           { name: "On-site", variant: "accent" },

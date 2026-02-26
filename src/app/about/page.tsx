@@ -262,6 +262,18 @@ export default function About() {
                         ),
                       )}
                     </Column>
+                    {experience.link && (
+                      <Row paddingTop="m">
+                        <Button
+                          href={experience.link}
+                          variant="secondary"
+                          size="s"
+                          suffixIcon="arrowUpRight"
+                        >
+                          Visit website
+                        </Button>
+                      </Row>
+                    )}
                     {experience.images && experience.images.length > 0 && (
                       <Row fillWidth paddingTop="m" paddingLeft="40" gap="12" wrap>
                         {experience.images.map((image, index) => (
