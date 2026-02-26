@@ -111,9 +111,20 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "Student Representative",
-        timeframe: "April 2025 - Present",
-        role: "School of Computing and Information Technology, Falcuty of Engineering and Information Science  University of Wollongong",
+        company: "Full Stack Product Developer",
+        timeframe: "Oct 2025 - Present",
+        role: "Devika · Part-time · Wollongong, New South Wales, Australia · On-site",
+        achievements: [
+          <>
+            Developing full stack product solutions as part of the Devika team.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "EIS School of Computing and Information Technology Student Representative",
+        timeframe: "Apr 2025 - Nov 2025",
+        role: "School of Computing and Information Technology, Faculty of Engineering and Information Science, University of Wollongong",
         achievements: [
           <>
             Acted as a liaison between students and faculty, advocating for student interests and ensuring the student voice was consistently represented in school-level decisions.
@@ -141,9 +152,12 @@ const about: About = {
       },
       {
         company: "Member of Faculty Education Committee",
-        timeframe: "June 2025 - Present",
-        role: "Falcuty of Engineering and Information Science, University of Wollongong",
+        timeframe: "Jun 2025 - Nov 2025",
+        role: "Faculty of Engineering and Information Science, University of Wollongong · Wollongong, New South Wales, Australia",
         achievements: [
+          <>
+            Representing student voice for student committee that improving learning and teaching experience in the Faculty of Engineering and Information Sciences (EIS).
+          </>,
           <>
             Represent the voice of international students at the faculty level, contributing actively to education policy discussions and decision-making processes.
           </>,
@@ -159,7 +173,6 @@ const about: About = {
           <>
             Foster strong relationships with university stakeholders to promote student-centred initiatives and continuous improvement.
           </>,
-          
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -194,6 +207,19 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Skills and Awards",
     skills: [
+      {
+        title: "AWS Certified Solutions Architect – Associate",
+        description: (
+          <>Issued Dec 2025 · Expires Dec 2028 · Amazon Web Services (AWS) · <a href="https://www.credly.com/badges/cfe94d1e-fe45-4392-a8ea-830716bc3547/linked_in_profile" target="_blank" rel="noopener noreferrer">View Credential</a></>
+        ),
+        tags: [
+          {
+            name: "AWS",
+            icon: "aws",
+          },
+        ],
+        images: [],
+      },
       {
         title: "UI/UX Design: Figma",
         description: (
