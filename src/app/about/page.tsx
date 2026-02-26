@@ -228,7 +228,7 @@ export default function About() {
                             {experience.company}
                           </Text>
                           {experience.tags && experience.tags.length > 0 && (
-                            <Row gap="6" wrap>
+                            <Row gap="8" wrap>
                               {experience.tags.map((tag, tagIndex) => (
                                 <Tag
                                   key={`${experience.company}-tag-${tagIndex}`}
