@@ -113,11 +113,16 @@ const about: About = {
       {
         company: "Full Stack Product Developer",
         timeframe: "Oct 2025 - Present",
-        role: "Devika · Part-time · Wollongong, New South Wales, Australia · On-site",
+        role: "Devika · Wollongong, New South Wales, Australia",
         achievements: [
           <>
             Developing full stack product solutions as part of the Devika team.
           </>,
+        ],
+        logo: "/images/logos/devika.svg",
+        tags: [
+          { name: "Part-time", variant: "brand" },
+          { name: "On-site", variant: "accent" },
         ],
         images: [],
       },
@@ -125,6 +130,10 @@ const about: About = {
         company: "EIS School of Computing and Information Technology Student Representative",
         timeframe: "Apr 2025 - Nov 2025",
         role: "School of Computing and Information Technology, Faculty of Engineering and Information Science, University of Wollongong",
+        logo: "/images/logos/uow.svg",
+        tags: [
+          { name: "Volunteer", variant: "accent" },
+        ],
         achievements: [
           <>
             Acted as a liaison between students and faculty, advocating for student interests and ensuring the student voice was consistently represented in school-level decisions.
@@ -154,6 +163,10 @@ const about: About = {
         company: "Member of Faculty Education Committee",
         timeframe: "Jun 2025 - Nov 2025",
         role: "Faculty of Engineering and Information Science, University of Wollongong · Wollongong, New South Wales, Australia",
+        logo: "/images/logos/uow.svg",
+        tags: [
+          { name: "Committee", variant: "brand" },
+        ],
         achievements: [
           <>
             Representing student voice for student committee that improving learning and teaching experience in the Faculty of Engineering and Information Sciences (EIS).

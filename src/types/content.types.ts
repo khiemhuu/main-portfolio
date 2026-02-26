@@ -150,6 +150,15 @@ export interface About extends BasePageConfig {
       role: string;
       /** Achievements at the company */
       achievements: React.ReactNode[];
+      /** Path to company/organization logo image */
+      logo?: string;
+      /** Tags/badges displayed next to the experience (e.g. "Part-time", "On-site") */
+      tags?: Array<{
+        /** Tag label text */
+        name: string;
+        /** Tag color variant */
+        variant?: "neutral" | "brand" | "accent" | "info" | "danger" | "warning" | "success";
+      }>;
       /** Images related to the experience */
       images?: Array<{
         /** Image source path */

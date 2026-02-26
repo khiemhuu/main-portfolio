@@ -208,11 +208,36 @@ export default function About() {
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
-                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                    <Row fillWidth horizontal="between" vertical="center" marginBottom="4" gap="12">
+                      <Row vertical="center" gap="12" style={{ minWidth: 0 }}>
+                        {experience.logo && (
+                          <Media
+                            src={experience.logo}
+                            alt={`${experience.company} logo`}
+                            radius="m"
+                            style={{ width: 40, height: 40, objectFit: "contain", flexShrink: 0 }}
+                          />
+                        )}
+                        <Column gap="4" style={{ minWidth: 0 }}>
+                          <Text id={experience.company} variant="heading-strong-l">
+                            {experience.company}
+                          </Text>
+                          {experience.tags && experience.tags.length > 0 && (
+                            <Row gap="6" wrap>
+                              {experience.tags.map((tag, tagIndex) => (
+                                <Tag
+                                  key={`${experience.company}-tag-${tagIndex}`}
+                                  size="s"
+                                  variant={tag.variant || "neutral"}
+                                >
+                                  {tag.name}
+                                </Tag>
+                              ))}
+                            </Row>
+                          )}
+                        </Column>
+                      </Row>
+                      <Text variant="heading-default-xs" onBackground="neutral-weak" style={{ flexShrink: 0 }}>
                         {experience.timeframe}
                       </Text>
                     </Row>
