@@ -119,7 +119,7 @@ const about: About = {
             Developing full stack product solutions as part of the Devika team.
           </>,
         ],
-        logo: "/images/logos/devika.svg",
+        logo: "/images/logos/devika.jpg",
         tags: [
           { name: "Part-time", variant: "brand" },
           { name: "On-site", variant: "accent" },
@@ -278,7 +278,7 @@ const about: About = {
         issuer: "Amazon Web Services (AWS)",
         date: "Issued Dec 2025 · Expires Dec 2028",
         description: <>Validates the ability to design and implement distributed systems on AWS, covering compute, networking, storage, and database services.</>,
-        badge: "/images/badges/aws-saa.svg",
+        badge: "/images/badges/aws-saa.png",
         link: "https://www.credly.com/badges/cfe94d1e-fe45-4392-a8ea-830716bc3547/linked_in_profile",
         tags: [
           {
