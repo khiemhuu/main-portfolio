@@ -152,6 +152,8 @@ export interface About extends BasePageConfig {
       achievements: React.ReactNode[];
       /** Path to company/organization logo image */
       logo?: string;
+      /** Link to company website or related resource */
+      link?: string;
       /** Tags/badges displayed next to the experience (e.g. "Part-time", "On-site") */
       tags?: Array<{
         /** Tag label text */
